@@ -51,8 +51,6 @@ var test = new OUnit.TestCase("test7", function(assert){
 	assert.shouldNotBeNull(null);
 });
 
-var event = "click";
-OUnit.Suites.create("Test Suite2").addTestOn(document.getElementById("abc"),event,test);
 var result = mySuite.executeTests();
 console.log("*************** Summary ***************************************");
 console.log(result.getSummary());
