@@ -84,7 +84,7 @@ OUnit.Suit.prototype.executeTests = function(){
 			}else{
 				failedTestCases.push(test.title);
 			}
-			detailedResult += ">>TestCase ("+test.title+"):" + test.recordAssertResult +"| Test Result - {"+(test.passed?"Passed":"Failed")+"}"+"\n";
+			detailedResult += "TestCase ("+test.title+"):" + test.recordAssertResult +"| Test Result - {"+(test.passed?"Passed":"Failed")+"}"+"\n";
 		}
 	}
 	result += testCasesExecuted.length;
